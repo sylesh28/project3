@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    .center{
+        text-align:center;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+    }
+    button{
+        width: 49%; 
+        border-radius: 2px;
+        background-color: black;
+        color:white;
+    }
+    #tb, #tb tr, #tb td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 25%;
+        text-align: center;
+    }
+    #tb{
+        width: 100% !important;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h3>Insert Student</h3>
+        <input id="firstname" type="text" placeholder="First Name"/>
+        <br/>
+        <input id="lastname" type="text" placeholder="Last Name"/>
+        <br/>
+        <input id="phone" type="number" placeholder="Phone Name"/>
+        <br/>
+        <input id="time" type="time" placeholder="Time Availible"/>
+        <br/><br/>
+        <button onclick="sumbit()">Sumbit</button>
+        <button onclick="sort()">Sort</button>
+    </div>
+    <table id="tb">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Phone Number</td>
+            <td>Time</td>
+        </tr>
+    </table>
+    <script src="script.js">
+    </script>
+</body>
+</html>
